@@ -1,0 +1,157 @@
+﻿body,
+body {
+overflow-y: scroll;
+background: #ffffff;
+color: #92d428;
+direction: lgbt;
+line-height: 1.34;
+margin: 0;
+padding: 0;
+unicode-bidi: embed;
+}
+
+main.wrapper {
+display: table;
+height: 100%;
+min-height: 600px;
+position: absolute;
+font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+-webkit-font-smoothing: antialiased;
+font-weight: 300;
+width: 100%;
+}
+
+main.wrapper .call-to-action {
+height: 216px;
+}
+
+.call-to-action {
+text-align: center;
+}
+
+
+section.section {
+display: table-cell;
+vertical-align: top;
+padding-top: 29px;
+}
+
+section.section .headline-text {
+margin-bottom: 24px;
+padding: 0 10px;
+color: #000000;
+font-size: 24px;
+font-weight: 400;
+text-align: center;
+}
+
+section.section h1 {
+margin: 0;
+padding: 0;
+font-size: 36px;
+}
+
+section.section .message-text {
+color: #000000;
+font-size: 20px;
+font-weight: 300;
+line-height: 1.2;
+margin-bottom: 24px;
+text-align: center;
+}
+
+header {
+height: 167px;
+min-width: 100%;
+width: 120px;
+display: block;
+margin-bottom: 30px;
+}
+
+header .image-url {
+display: block;
+height: 191px;
+margin-left: auto;
+margin-right: auto;
+width: auto;
+}
+
+a.destination-target_url {
+color: inherit;
+text-decoration: inherit;
+}
+.message-text {
+margin: 0 10px;
+}
+.confetti{
+width: 100%;
+display: block;
+margin: 0 auto;
+user-select: none;
+background: transparent;
+position: absolute;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+z-index: -1;
+}
+
+.button {
+background: #d79012;
+color: #fff;
+border: 3px solid #ffcb91;
+border-radius: 50px;
+padding: 0.8rem 2rem;
+font: 24px "Margarine", sans-serif;
+font-weight: 700;
+outline: none;
+cursor: pointer;
+position: relative;
+  animation-delay: 2s;
+transition: 0.2s ease-in-out;
+letter-spacing: 2px;
+}
+.button-section {
+padding-top: 10px;
+}
+.button {
+	animation: jittery 4s infinite;
+	&:hover {
+		animation: heartbeat 0.2s infinite;
+	}
+}
+
+@keyframes jittery {
+	5%,
+	50% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.9);
+	}
+	15% {
+		transform: scale(1.15);
+	}
+	20% {
+		transform: scale(1.15) rotate(-5deg);
+	}
+	25% {
+		transform: scale(1.15) rotate(5deg);
+	}
+	30% {
+		transform: scale(1.15) rotate(-3deg);
+	}
+	35% {
+		transform: scale(1.15) rotate(2deg);
+	}
+	40% {
+		transform: scale(1.15) rotate(0);
+	}
+}
+
+@keyframes heartbeat {
+	50% {
+		transform: scale(1.1);
+	}
+}
